@@ -1,0 +1,9 @@
+.ItemGray {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 294px;
+  height: 27px;
+  background: #eef0f4;
+  font-size: 21px;
+}
