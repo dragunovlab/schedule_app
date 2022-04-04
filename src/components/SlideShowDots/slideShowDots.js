@@ -1,8 +1,9 @@
 import React from "react";
-import "./slideShowDots.css";
+import "./SlideShowDots.css";
 
 export const SlideShowDots = (props) => {
-  return (
+  // console.log(props, "props")
+  return ( 
     <div className="slideshowDots">
       {props.dots.map((_, idx) => (
         <div
