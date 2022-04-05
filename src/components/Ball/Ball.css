@@ -9,12 +9,13 @@
     box-shadow: 9.91px 9.91px 15px #D9D9E8, -9.91px -9.91px 15px #FFFFFF;
 
     animation-name: ball-bounce;
-    animation-duration: 3s;
+    animation-duration: 10s;
     animation-iteration-count: 1;
     animation-delay: 10s;
     animation-direction: alternate;
-    transition: 1s
-
+    transition: 1s;
+    
+    animation: App-logo-spin infinite 20s linear;
 }
 
 .Ball__2 {
@@ -24,10 +25,27 @@
     width: 35px;
     height: 35px;
     border-radius: 100px;
-    background: linear-gradient(145deg, #FFFFFF, #C1C1CF);
+    border: 2px solid linear-gradient(145deg, #FFFFFF, #C1C1CF);
+    /* background: linear-gradient(145deg, #FFFFFF, #C1C1CF); */
     border-radius: 100%;
     box-shadow: 9.91px 9.91px 15px #D9D9E8, -9.91px -9.91px 15px #FFFFFF;
 }
+
+@keyframes App-logo-spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+
+
+
+
+
+
+
 
 @keyframes  ball-bounce {
     0% {

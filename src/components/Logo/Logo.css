@@ -1,8 +1,26 @@
-.Logo {
-    margin-left: 158px;
+.box__logo {
+    display: flex;
+}
+
+.logo__div {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background: #eef0f4;
+    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff; ;
+}
+
+.logo__icon { 
+    margin-top: 11px;
+    font-size: 48px;
+ }
+
+.logo {
+    margin-left: 20px;
     font-family: 'Oswald';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 32px;
     line-height: 53px;
 }
+

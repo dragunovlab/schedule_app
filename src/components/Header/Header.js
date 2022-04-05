@@ -1,5 +1,7 @@
 import React from 'react'
 import Bell from '../Bell/Bell'
+import BurgerBtn from '../BurgerBtn/BurgerBtn'
+import ContentBottom from '../ContentBottom/ContentBottom'
 import Logo from '../Logo/Logo'
 import Time from '../Time/Time'
 import './Header.css'
@@ -9,7 +11,10 @@ function Header() {
     <div className='Header'>
     <Logo />
     <Bell />
+    <ContentBottom />
     <Time />
+    <BurgerBtn />
+
     </div>
     
   )

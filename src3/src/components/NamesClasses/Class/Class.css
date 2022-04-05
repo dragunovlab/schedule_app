@@ -1,0 +1,16 @@
+.Class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 53px;
+  height: 250px;
+  border-left: 4px solid #18a0fb;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 53px;
+  background: #eef0f4;
+  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+}

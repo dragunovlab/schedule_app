@@ -36,8 +36,8 @@ function Content(props) {
 
   return (
     <>
-    <ContentBottom />
-      <SlideShowDots dots={numbersOfClasses} currentIndex={index} />
+
+     
       
       <div className="Content">
         <div
@@ -49,6 +49,7 @@ function Content(props) {
           ))}
         </div>
       </div>
+      <SlideShowDots dots={numbersOfClasses} currentIndex={index} />
     </>
   );
 }

@@ -1,11 +1,26 @@
+button {
+    background: #EEF0F4;
+    box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF;
+}
+
 .start {
-    width: 300px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
+    border: none;
+    background: #EEF0F4;
+    box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF;
 }
 
 .stop {
-    width: 300px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
+    border: none;
+    background: #EEF0F4;
+}
+
+.start:active {
+    background: #18a0fb;
+    color: #fff;
 }
