@@ -6,6 +6,15 @@ import Logo from '../Logo/Logo'
 import Time from '../Time/Time'
 import './Header.css'
 
+ 
+import Navbar from '../NavBar/NavBar'
+import { BrowserRouter as Router,  Routes } from 'react-router-dom';
+
+import Home from '../../pages/Home';
+import Reports from '../../pages/Reports';
+import Products from '../../pages/Products';
+
+
 function Header() {
   return (
     <div className='Header'>
@@ -14,7 +23,15 @@ function Header() {
     <ContentBottom />
     <Time />
     <BurgerBtn />
-
+ 
+    <Router>
+        <Navbar />
+        
+          <Routes path='/' exact component={Home} />
+          <Routes path='/reports' component={Reports} />
+          <Routes path='/products' component={Products} />
+         
+      </Router>
     </div>
     
   )

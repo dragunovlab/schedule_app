@@ -18,6 +18,10 @@ function Content(props) {
     }
   }
 
+  const setCurrentCallback = (index) => {
+    setIndex(index);
+  };
+
   useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(
@@ -36,9 +40,6 @@ function Content(props) {
 
   return (
     <>
-
-     
-      
       <div className="Content">
         <div
           className="slideshow-slider"
@@ -49,7 +50,11 @@ function Content(props) {
           ))}
         </div>
       </div>
-      <SlideShowDots dots={numbersOfClasses} currentIndex={index} />
+      <SlideShowDots
+        dots={numbersOfClasses}
+        currentIndex={index}
+        setCurrent={(idx) => setCurrentCallback(idx)}
+      />
     </>
   );
 }

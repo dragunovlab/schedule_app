@@ -11,7 +11,7 @@ function Logo() {
     </span>
     </div>
     <span className='logo'>
-        Расписание уроков
+        Расписание уроков школы N1
     </span>
     </div>
     </>
