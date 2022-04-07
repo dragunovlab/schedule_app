@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Block from "../Block/Block";
 import ContentBottom from "../ContentBottom/ContentBottom";
 import SlideShowDots from "../SlideShowDots/SlideShowDots";
+
 import "./Content.css";
 
 const numbersOfClasses = ["1", "2", "3", "4", "5", "6", "7"]; //Arr number
@@ -10,6 +11,8 @@ const delay = 2500; //const
 function Content(props) {
   const [index, setIndex] = useState(0); //set State
   const timeoutRef = useRef(null); //link on let or DOM //timeoutRef.current
+
+  const [stopTimeout, setStopTimeout] = useState(false); //set State
 
   function resetTimeout() {
     //if timeout = true {clearTimeout}
@@ -22,25 +25,38 @@ function Content(props) {
     setIndex(index);
   };
 
+  const callbackTimeout = (arg) => {
+    if (arg) {
+      setStopTimeout(false);
+    } else {
+      setStopTimeout(true);
+    }
+    console.log(arg);
+  };
+
   useEffect(() => {
     resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === numbersOfClasses.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
+
+    if (!stopTimeout) {
+      timeoutRef.current = setTimeout(
+        () =>
+          setIndex((prevIndex) =>
+            prevIndex === numbersOfClasses.length - 1 ? 0 : prevIndex + 1
+          ),
+        delay
+      );
+    }
 
     return () => {
       //stop timeout
       resetTimeout();
     };
-  }, [index]); //State
+  }, [index, stopTimeout]); //State
 
   return (
     <>
       <div className="Content">
+        <ContentBottom callbackTimeout={(res) => callbackTimeout(res)} />
         <div
           className="slideshow-slider"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}

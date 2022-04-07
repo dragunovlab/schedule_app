@@ -1,15 +1,15 @@
 .Content {
-    margin-top: 0px;
-    width: 100%;
-    height: 85vh;
-    border-radius: 50px;
-    background: #EEF0F4;
-    box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF;
-    overflow: hidden;
-    border: 12px solid transparent;
+  margin-top: 0px;
+  width: 100%;
+  height: 85vh;
+  border-radius: 50px;
+  background: #eef0f4;
+  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+  overflow: hidden;
+  border: 12px solid transparent;
 }
 
 .slideshow-slider {
-    display: flex;
-    transition: ease 1000ms;
+  display: flex;
+  transition: ease 1000ms;
 }

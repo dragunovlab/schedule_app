@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 function Reports() {
   return (
-    <div className='reports'>
+    <div className="reports">
       <h1>Reports</h1>
     </div>
   );

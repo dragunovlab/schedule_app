@@ -1,20 +1,19 @@
-import React from 'react'
-import Ellipse from '../../Ellipse/Ellipse'
-import './ItemGray.css'
+import React from "react";
+import Ellipse from "../../Ellipse/Ellipse";
+import "./ItemGray.css";
 
 function ItemGray() {
   return (
-    <div className='ItemGray'>
-         1
+    <div className="ItemGray">
+      1
       <Ellipse />
       12:20
       <Ellipse />
-        информатика
+      информатика
       <Ellipse />
       каб 121
     </div>
-    
-  )
+  );
 }
 
-export default ItemGray
+export default ItemGray;

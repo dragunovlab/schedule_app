@@ -1,12 +1,12 @@
 .Bell__icon {
-    margin: 17px auto;
-    border-radius: 50px;
-    font-size: 36px;
+  margin: 17px auto;
+  border-radius: 50px;
+  font-size: 36px;
 }
 
 .Bell {
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
-    box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
 }

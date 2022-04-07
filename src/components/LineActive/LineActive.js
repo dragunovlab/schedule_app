@@ -1,13 +1,8 @@
-import React from 'react'
-import './LineActive.css'
+import React from "react";
+import "./LineActive.css";
 
 function LineActive() {
-  return (
-    <div className='LineActive'>
-        
-    </div>
-    
-  )
+  return <div className="LineActive"></div>;
 }
 
-export default LineActive
+export default LineActive;

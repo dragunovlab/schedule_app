@@ -1,38 +1,38 @@
 const arr = [
   {
+    numberClass: "", //массив всех классов с 1 по 11
     numberClass: "",
     numberClass: "",
-    numberClass: ""
   },
   {
-    monday: "",
+    monday: "", //массив всех дней недели
     thursday: "",
     wednesday: "",
     thursday: "",
-    friday: ""
+    friday: "",
   },
   {
-    idTitle: "",
+    idTitle: "", //массив всех заголовков
     timeTitle: "",
     itemTitle: "",
-    roomTitle: ""
+    roomTitle: "",
+  },
+  {
+    id: "", //массив из 7 обектов
+    time: "",
+    item: "",
+    room: "",
   },
   {
     id: "",
     time: "",
     item: "",
-    room: ""
+    room: "",
   },
   {
     id: "",
     time: "",
     item: "",
-    room: ""
-  },
-  {
-    id: "",
-    time: "",
-    item: "",
-    room: ""
+    room: "",
   },
 ];

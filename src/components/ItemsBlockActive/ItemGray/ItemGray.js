@@ -1,13 +1,8 @@
-import React from 'react'
-import './ItemGray.css'
+import React from "react";
+import "./ItemGray.css";
 
 function ItemGray() {
-  return (
-    <div className='ItemGray'>
-        информатика
-    </div>
-    
-  )
+  return <div className="ItemGray">информатика</div>;
 }
 
-export default ItemGray
+export default ItemGray;
