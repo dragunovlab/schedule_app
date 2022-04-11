@@ -56,7 +56,7 @@ function Content(props) {
   return (
     <>
       <div className="Content">
-        <ContentBottom callbackTimeout={(res) => callbackTimeout(res)} />
+      <ContentBottom callbackTimeout={(res) => callbackTimeout(res)} />
         <div
           className="slideshow-slider"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
@@ -66,11 +66,13 @@ function Content(props) {
           ))}
         </div>
       </div>
+   
       <SlideShowDots
         dots={numbersOfClasses}
         currentIndex={index}
         setCurrent={(idx) => setCurrentCallback(idx)}
       />
+ 
     </>
   );
 }

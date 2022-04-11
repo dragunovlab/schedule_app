@@ -12,4 +12,5 @@
 .slideshow-slider {
   display: flex;
   transition: ease 1000ms;
+  background: none;
 }

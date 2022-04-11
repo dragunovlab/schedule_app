@@ -15,16 +15,24 @@ const ContentBottom = (props) => {
   return (
     <>
       {isPlaying ? (
-        <span className="start material-icons" onClick={startStopClick}>
+        <div className="start-box"> 
+        <span className="start material-icons md-48" onClick={startStopClick}>
         play_circle
         </span>
+        </div>
+     
         // <button className="start" onClick={startStopClick}>
         //   start
         // </button>
       ) : (
-        <button className="stop" onClick={startStopClick}>
-          stop
-        </button>
+        <div className="stop-box"> 
+        <span className="stop material-icons md-36" onClick={startStopClick}>
+        stop_circle
+        </span>  
+        </div>
+      //    <button className="stop" onClick={startStopClick}>
+      //    stop
+      //  </button>  
       )}
     </>
   );

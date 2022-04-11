@@ -3,12 +3,12 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Content from "./components/Content/Content";
 import Ball from "./components/Ball/Ball";
-import Slideshow from "./components/Slideshow/Slideshow";
 import Menu from "./components/Menu/Menu";
-// import {loadItemsActions} from './modules/counter/actions'
+import { loadItemsActions } from "./modules/counter/actions";
 
-function App({ loadItemsActions }) {
-  // loadItemsActions()
+
+function App({}) {
+  loadItemsActions()
 
   const [menuActive, setMenuActive] = useState(false);
   const items = [
@@ -22,7 +22,6 @@ function App({ loadItemsActions }) {
       <Header />
       <Ball />
       <Content />
-      {/* <Slideshow /> */}
       <Menu
         active={menuActive}
         setActive={setMenuActive}
