@@ -17,7 +17,9 @@ class Time extends React.Component {
   render() {
     return (
       <div className="Time">
-        <img className="Time__img" src={svg} alt="" />
+        <div className="time-box">
+        <span className="time-icon material-icons">hourglass_top</span>
+        </div>
         <p>{this.state.time}.</p>
       </div>
     );

@@ -11,7 +11,7 @@ const Menu = ({ header, items, active, setActive }) => {
           {items.map((item) => (
             <li>
               <a href="{item.href}">{item.value}</a>
-              <span class="material-icons">{item.icon}</span>
+              <span className="material-icons">{item.icon}</span>
             </li>
           ))}
         </ul>

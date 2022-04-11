@@ -17,17 +17,14 @@ function Header() {
   return (
     <div className="Header">
       <Logo />
-      <Bell />
-      <ContentBottom />
-      <Time />
-
       <Router>
         <Navbar />
-
         <Routes path="/" exact component={Home} />
         <Routes path="/reports" component={Reports} />
         <Routes path="/products" component={Products} />
       </Router>
+      <Bell />
+      <Time />
     </div>
   );
 }
