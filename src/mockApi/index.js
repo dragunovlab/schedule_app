@@ -1,38 +1,43 @@
+const numbersOfClasses = ["1", "2", "3", "4", "5", "6", "7"]; //Arr number
+const days = ["monday", "thursday", "wednesday", "thursday", "friday"];
+const titles = ["idTitle","timeTitle","itemTitle","roomTitle"]
+
+
 const arr = [
   {
-    numberClass: "", //массив всех классов с 1 по 11
-    numberClass: "",
-    numberClass: "",
+    id: "1", //массив из 7 обектов
+    time: "10:00",
+    item: "алгебра",
+    room: "22",
   },
   {
-    monday: "", //массив всех дней недели
-    thursday: "",
-    wednesday: "",
-    thursday: "",
-    friday: "",
+    id: "08:00",
+    time: "14554",
+    item: "русский",
+    room: "4",
   },
   {
-    idTitle: "", //массив всех заголовков
-    timeTitle: "",
-    itemTitle: "",
-    roomTitle: "",
+    id: "1",
+    time: "4",
+    item: "русский",
+    room: "1",
   },
   {
-    id: "", //массив из 7 обектов
+    id: "4",
     time: "",
-    item: "",
-    room: "",
+    item: "русский",
+    room: "55",
   },
   {
-    id: "",
+    id: "4",
     time: "",
-    item: "",
-    room: "",
+    item: "русский",
+    room: "41",
   },
-  {
-    id: "",
+    {
+    id: "13",
     time: "",
-    item: "",
-    room: "",
+    item: "русский",
+    room: "12",
   },
 ];
