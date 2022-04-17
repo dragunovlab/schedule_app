@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Block from "../Block/Block";
 import ContentBottom from "../ContentBottom/ContentBottom";
 import SlideShowDots from "../SlideShowDots/SlideShowDots";
+import Gear from "../Gear/Gear"
 
 import "./Content.css";
 
@@ -56,7 +57,12 @@ function Content(props) {
   return (
     <>
       <div className="Content">
+
+      <div className="lineBtn">
       <ContentBottom callbackTimeout={(res) => callbackTimeout(res)} />
+      <Gear />
+      </div>      
+      
         <div
           className="slideshow-slider"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
@@ -66,7 +72,7 @@ function Content(props) {
           ))}
         </div>
       </div>
-   
+      
       <SlideShowDots
         dots={numbersOfClasses}
         currentIndex={index}

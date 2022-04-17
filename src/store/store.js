@@ -1,5 +1,5 @@
-import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "../../modules/counter/slice";
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from '../modules/counter/slice';
 
 const store = configureStore({
   reducer: {
@@ -7,4 +7,5 @@ const store = configureStore({
   },
 });
 
-export default store;
+export default store
+

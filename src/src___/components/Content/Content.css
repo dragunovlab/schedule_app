@@ -1,5 +1,5 @@
 .Content {
-  margin-top: 0px;
+  margin-top: 60px;
   width: 100%;
   height: 85vh;
   border-radius: 50px;
@@ -7,6 +7,15 @@
   box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
   overflow: hidden;
   border: 12px solid transparent;
+}
+
+.lineBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
 }
 
 .slideshow-slider {

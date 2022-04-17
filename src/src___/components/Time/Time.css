@@ -28,6 +28,35 @@
   border-radius: 50px;
   background: #eef0f4;
   box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+  animation: move 60s infinite ease-in-out;
+}
+
+@keyframes move {
+20%, 100% {
+  transform: rotate(360deg);
+  color:  #18a0fb;
+}
+0% {
+  opacity: 1;
+}
+
+100% {
+  opacity: 0;
+}
+}
+
+@keyframes move {
+20%, 100% {
+  transform: rotate(360deg);
+  color:  #18a0fb;
+}
+0% {
+  opacity: 1;
+}
+
+100% {
+  opacity: 0;
+}
 }
 
 p {

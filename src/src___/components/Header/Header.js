@@ -9,14 +9,14 @@ import "./Header.css";
 import Navbar from "../NavBar/NavBar";
 import { BrowserRouter as Router, Routes } from "react-router-dom";
 
-import Home from "../../pages/Home";
-import Reports from "../../pages/Reports";
-import Products from "../../pages/Products";
+import Home from "../pages/Home";
+import Reports from "../pages/Reports";
+import Products from "../pages/Products";
 
 function Header() {
   return (
     <div className="Header">
-      <Logo />
+      {/* <Logo /> */}
       <Router>
         <Navbar />
         <Routes path="/" exact component={Home} />
