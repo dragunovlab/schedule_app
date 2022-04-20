@@ -5,13 +5,16 @@ import "./ItemWhite.css";
 function ItemWhite() {
   return (
     <div className="ItemWhite">
-      1
+      <input placeholder="1"/>
       <Ellipse />
-      15:30
+      <input placeholder="15:30"/>
+    
       <Ellipse />
-      информатика
+      <input placeholder="информатика"/>
+  
       <Ellipse />
-      каб 155
+      <input placeholder="каб 155"/>
+
     </div>
   );
 }

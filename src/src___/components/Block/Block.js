@@ -4,6 +4,7 @@ import DayBlockActive from "../DayBlockActive/DayBlockActive";
 import NamesClasses from "../NamesClasses/NamesClasses";
 import "./Block.css";
 
+
 function Block(props) {
   return (
     <>
@@ -11,7 +12,7 @@ function Block(props) {
         <NamesClasses numberClass={props.numberOfClass} />
         <DayBlock />
         <DayBlock />
-        <DayBlockActive />
+        <DayBlock />
         <DayBlock />
         <DayBlock />
       </div>

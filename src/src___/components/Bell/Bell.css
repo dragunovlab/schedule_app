@@ -9,6 +9,7 @@
 .Bell {
   width: 70px;
   height: 70px;
+  margin-left: 200px;
   border-radius: 50px;
   box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
 }

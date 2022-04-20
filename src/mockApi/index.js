@@ -2,7 +2,6 @@ const numbersOfClasses = ["1", "2", "3", "4", "5", "6", "7"]; //Arr number
 const days = ["monday", "thursday", "wednesday", "thursday", "friday"];
 const titles = ["idTitle","timeTitle","itemTitle","roomTitle"]
 
-
 const arr = [
   {
     id: "1", //массив из 7 обектов

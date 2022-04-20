@@ -2,7 +2,9 @@ import React from "react";
 import "./TextDay.css";
 
 function TextDay(props) {
-  return <div className="TextDay">{props.day}</div>;
+  return <div className="TextDay">{props.day.map((item, index) =>
+    <li>{item}</li>
+  )}</div>;
 }
 
 export default TextDay;

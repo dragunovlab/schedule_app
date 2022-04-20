@@ -5,13 +5,16 @@ import "./ItemGray.css";
 function ItemGray() {
   return (
     <div className="ItemGray">
-      1
+      <input placeholder=" 1"/>
       <Ellipse />
-      12:20
+      <input placeholder="12:20"/>
+   
       <Ellipse />
-      информатика
+      <input placeholder="информатика"/>
+    
       <Ellipse />
-      каб 121
+      <input placeholder="каб 121"/>
+
     </div>
   );
 }

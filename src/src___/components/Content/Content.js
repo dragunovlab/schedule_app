@@ -4,6 +4,8 @@ import ContentBottom from "../ContentBottom/ContentBottom";
 import SlideShowDots from "../SlideShowDots/SlideShowDots";
 import Gear from "../Gear/Gear"
 
+import TextDay from "../TextDay/TextDay";
+
 import "./Content.css";
 
 const numbersOfClasses = ["1", "2", "3", "4", "5", "6", "7"]; //Arr number
@@ -14,6 +16,9 @@ function Content(props) {
   const timeoutRef = useRef(null); //link on let or DOM //timeoutRef.current
 
   const [stopTimeout, setStopTimeout] = useState(false); //set State
+
+  const days = ["ПН", "ВТ", "СР", "ЧТ", "ПТ"];
+ 
 
   function resetTimeout() {
     //if timeout = true {clearTimeout}
@@ -54,14 +59,30 @@ function Content(props) {
     };
   }, [index, stopTimeout]); //State
 
+  let a = 5
+  
+  function f1() {
+    console.log('f1 work' + 5)
+  }
+
   return (
     <>
       <div className="Content">
-
+      
       <div className="lineBtn">
       <ContentBottom callbackTimeout={(res) => callbackTimeout(res)} />
+      <div className="style-box" onClick={f1}>
+      <span className="style-icone material-icons">
+      format_color_fill
+      </span>
+
+      </div>
+     
       <Gear />
-      </div>      
+      
+      </div>    
+
+      <TextDay day={days}  />  
       
         <div
           className="slideshow-slider"

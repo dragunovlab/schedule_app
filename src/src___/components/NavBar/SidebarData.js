@@ -7,7 +7,7 @@ export const SidebarData = [
   {
     title: "Home",
     path: "/",
-    icon: <span class="material-icons">
+    icon: <span className="material-icons">
     dark_mode
     </span>,
     cName: "nav-text",
@@ -15,7 +15,7 @@ export const SidebarData = [
   {
     title: "Reports",
     path: "/reports",
-    icon: <span class="material-icons">
+    icon: <span className="material-icons">
     dark_mode
     </span>,
     cName: "nav-text",
@@ -23,7 +23,7 @@ export const SidebarData = [
   {
     title: "Products",
     path: "/products",
-    icon: <span class="material-icons">
+    icon: <span className="material-icons">
     dark_mode
     </span>,
     cName: "nav-text",
@@ -31,7 +31,7 @@ export const SidebarData = [
   {
     title: "Team",
     path: "/team",
-    icon: <span class="material-icons">
+    icon: <span className="material-icons">
     dark_mode
     </span>,
     cName: "nav-text",
@@ -39,7 +39,7 @@ export const SidebarData = [
   {
     title: "Messages",
     path: "/messages",
-    icon: <span class="material-icons">
+    icon: <span className="material-icons">
     dark_mode
     </span>,
     cName: "nav-text",
@@ -47,7 +47,7 @@ export const SidebarData = [
   {
     title: "Support",
     path: "/support",
-    icon: <span class="material-icons">
+    icon: <span className="material-icons">
     dark_mode
     </span>,
     cName: "nav-text",
