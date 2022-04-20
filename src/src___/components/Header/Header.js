@@ -23,7 +23,7 @@ function Header() {
         <Routes path="/reports" component={Reports} />
         <Routes path="/products" component={Products} />
       </Router>
-      <Bell />
+      {/* <Bell /> */}
       <Time />
     </div>
   );

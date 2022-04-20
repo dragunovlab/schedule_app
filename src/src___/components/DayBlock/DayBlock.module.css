@@ -1,95 +1,98 @@
 .DayBlock {
-  /* margin-top: 0px; */
+  margin-top: 40px;
   margin-left: 40px;
   /* width: 297px; */
   width: 320px;
-  height: 90%;
-  border: 2px solid black;
-  text-transform: uppercase;
+  height: 951px;
+  /* border: 2px solid black; */
 }
 
-
 table {
-  margin-top: 20px;
-  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 21px;
   color: #8b8fa5;
-  /* border: 2px solid #8b8fa5; */
-  text-transform: uppercase;
 }
 
 th {
+  border-radius: 10px 10px 0 0;
   font-size: 21px;
-  /* box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff; */
-  /* border-left: 1px solid #8b8fa5; */
-  /* border-right: 1px solid #8b8fa5; */
+  text-transform: uppercase;
+  height: 40px;
+  font-weight: 500;
+  background: #8b8fa5;
+  color: #fff;
 }
 
 tr {
-  
 }
 
 td {
-  
 }
 
 input {
-  height: 20px;
-  text-transform: uppercase;
+  width: 74px;
+  height: 40px;
 }
 
-input:active, input:hover, input:focus {
+input:active,
+input:hover,
+input:focus {
   outline: 0;
   outline-offset: 0;
-  border: 2px solid #18A0FB;
+  border: 2px solid #18a0fb;
 }
 
 .number {
-  font-size: 128px;
-  width: 30px;
+  width: 100%;
 }
 
 .time {
-  width: 50px;
+  width: 100%;
 }
 
 .subject {
-width: 140px;
-border-left: 1px solid #8b8fa5;
-border-right: 1px solid #8b8fa5;
+  width: 100%;
+  border-left: 1px solid #8b8fa5;
+  border-right: 1px solid #8b8fa5;
 }
 
 .cabinet {
-  width: 40px;
+  width: 100%;
 }
 
 .i {
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background: #fff;
   font-size: 21px;
   color: #8b8fa5;
   border: none;
+  /* border-left: 1px solid #8b8fa5; */
+  /* border-right: 1px solid #8b8fa5; */
 }
 
 .i2 {
   text-align: center;
-  font-family: 'Oswald', sans-serif;
-  background: #EEF0F4;
+  font-family: "Oswald", sans-serif;
+  background: #eef0f4;
   font-size: 21px;
   color: #8b8fa5;
   border: none;
+  /* border-left: 1px solid #8b8fa5; */
+  /* border-right: 1px solid #8b8fa5; */
 }
 
-.i:focus{
-  border: 3px solid blue;
-  box-shadow: 1px 1px 2px 0 blue;
-  }
+.i:focus {
+  border: 4px solid #18a0fb;
+  box-shadow: 1px 1px 2px 0 #18a0fb;
+}
 
-  .i2:focus{
-      border: 3px solid blue;
-      box-shadow: 1px 1px 2px 0 blue;
-      }
+.i2:focus {
+  border: 4px solid #18a0fb;
+  box-shadow: 1px 1px 2px 0 #18a0fb;
+}
 
-
-
-
+.add-icon {
+  cursor: pointer;
+}

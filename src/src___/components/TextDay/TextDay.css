@@ -1,7 +1,7 @@
 .TextDay {
   display: flex;
   margin-top: 20px;
-  margin-left: 60px;
+  margin-left: 80px;
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
@@ -12,8 +12,8 @@
 }
 
 li {
-  margin-left: 40px;
-  width: 300px;
+  margin-left: 20px;
+  width: 320px;
   height: 60px;
   list-style: none;
   font-family: "Oswald";
@@ -22,5 +22,5 @@ li {
   font-size: 32px;
   line-height: 53px;
   background: none;
-  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+  /* border-bottom: 4px solid #18a0fb; */
 }

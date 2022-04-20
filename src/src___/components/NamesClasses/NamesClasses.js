@@ -1,6 +1,6 @@
 import React from "react";
 import Class from "./Class/Class";
-import "./NamesClasses.css";
+import s from "./NamesClasses.css";
 
 function NamesClasses(props) {
   return (
