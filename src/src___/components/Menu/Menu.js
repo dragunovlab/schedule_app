@@ -9,7 +9,7 @@ const Menu = ({ header, items, active, setActive }) => {
         <div className="menu__header">{header}</div>
         <ul>
           {items.map((item) => (
-            <li>
+            <li key={Math.random()}>
               <a href="{item.href}">{item.value}</a>
               <span className="material-icons">{item.icon}</span>
             </li>

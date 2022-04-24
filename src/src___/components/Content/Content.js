@@ -3,12 +3,13 @@ import Block from "../Block/Block";
 import ContentBottom from "../ContentBottom/ContentBottom";
 import SlideShowDots from "../SlideShowDots/SlideShowDots";
 import Gear from "../Gear/Gear"
+import Header from "../Header/Header"
 
 import TextDay from "../TextDay/TextDay";
 
 import "./Content.css";
 
-const numbersOfClasses = ["1", "2", "3", "4", "5", "6", "7"]; //Arr number
+const numbersOfClasses = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]; //Arr number
 const delay = 2500; //const
 
 function Content(props) {
@@ -60,27 +61,17 @@ function Content(props) {
   }, [index, stopTimeout]); //State
 
   let a = 5
-  
+  const st = document.querySelector(".st")
   function f1() {
     console.log('f1 work' + 5)
+    console.log(st)
+    st.href = "../src/Dark.css"
   }
 
   return (
     <>
       <div className="Content">
       
-      <div className="lineBtn">
-      <ContentBottom callbackTimeout={(res) => callbackTimeout(res)} />
-      <div className="style-box" onClick={f1}>
-      <span className="style-icone material-icons">
-      format_color_fill
-      </span>
-
-      </div>
-     
-      <Gear />
-      
-      </div>    
 
       <TextDay day={days}  />  
       
@@ -92,14 +83,26 @@ function Content(props) {
             <Block numberOfClass={numberOfClass} key={index} />
           ))}
         </div>
-      </div>
-      
-      <SlideShowDots
+        <div className="lineBtn">
+      <ContentBottom callbackTimeout={(res) => callbackTimeout(res)} />
+      {/* <div className="style-box" onClick={f1}>
+      <span className="style-icone material-icons">
+      format_color_fill
+      </span>
+
+      </div> */}
+       <SlideShowDots
         dots={numbersOfClasses}
         currentIndex={index}
         setCurrent={(idx) => setCurrentCallback(idx)}
       />
- 
+      <Gear />
+      
+      </div>   
+      </div>
+      
+    
+     
     </>
   );
 }

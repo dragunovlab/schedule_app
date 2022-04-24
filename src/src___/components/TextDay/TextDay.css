@@ -9,6 +9,7 @@
   line-height: 53px;
   border-radius: 20px;
   background: none;
+  
 }
 
 li {
@@ -22,5 +23,6 @@ li {
   font-size: 32px;
   line-height: 53px;
   background: none;
-  /* border-bottom: 4px solid #18a0fb; */
+  /* box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff; */
+  /* border-top: 8px solid #8b8fa5; */
 }

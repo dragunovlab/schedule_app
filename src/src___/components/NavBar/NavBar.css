@@ -73,10 +73,10 @@
 
 .navbar-toggle {
   margin-top: 0;
-  background-color: #18a0fb;
+  background-color: #8b8fa5;
   width: 100%;
   /* margin-top: 20px; */
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -89,4 +89,8 @@ span {
 
 svg {
   background: none;
+}
+
+path {
+  color: #fff;
 }

@@ -3,7 +3,7 @@ import "./TextDay.css";
 
 function TextDay(props) {
   return <div className="TextDay">{props.day.map((item, index) =>
-    <li>{item}</li>
+    <li key={Math.random()}>{item}</li>
   )}</div>;
 }
 
