@@ -1,10 +1,9 @@
 import { React, useState } from "react";
 import "./App.css";
-import Header from "./src___/components/Header/Header";
-import Content from "./src___/components/Content/Content";
-import Ball from "./src___/components/Ball/Ball";
-import Slideshow from "./src___/components/Slideshow/Slideshow";
-import Menu from "./src___/components/Menu/Menu";
+import Header from "./components/Header/Header";
+import Content from "./components/Content/Content";
+import Ball from "./components/Ball/Ball";
+import Menu from "./components/Menu/Menu";
 
 function App({ loadItemsActions }) {
   loadItemsActions();
@@ -21,7 +20,6 @@ function App({ loadItemsActions }) {
       <Header />
       {/* <Ball /> */}
       <Content />
-      {/* <Slideshow /> */}
       <Menu
         active={menuActive}
         setActive={setMenuActive}
