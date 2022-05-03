@@ -1,59 +1,34 @@
-.box-burger-btn {
+.center {
   position: relative;
-  width: 70px;
-  height: 70px;
-  border-radius: 50px;
-  background: #eef0f4;
-  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
-}
-
-.burger-btn {
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 22.5px;
-  left: 8.5px;
+  width: 26px;
+  height: 26px;
+  top: 7px;
+  left: 35px;
+  transform: translate(-50%, -50%);
   background: none;
   cursor: pointer;
 }
 
-.burger-btn:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 30px;
-  height: 4px;
+.center:before,
+.center:after,
+.center div {
   background: #8b8fa5;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 4px;
+  margin: 6px 0;
+  transition: 0.5s;
+}
+.center:hover:before {
+  transform: translateY(10px) rotate(135deg);
   box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
 }
-
-.burger-btn span {
-  content: "";
-  position: absolute;
-  top: 11px;
-  width: 30px;
-  height: 4px;
-  background: #8b8fa5;
+.center:hover:after {
+  transform: translateY(-10px) rotate(-135deg);
   box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
 }
-
-.burger-btn:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 30px;
-  height: 4px;
-  background: #8b8fa5;
-  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
-}
-
-
-.burger-btn:hover:before {
-  transform: translateY(12px) rotate(135deg);
-}
-.burger-btn:hover:after {
-  transform: translateY(-12px) rotate(-135deg);
-}
-.burger-btn:hover span {
+.center:hover div {
   transform: scale(0);
+  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
 }

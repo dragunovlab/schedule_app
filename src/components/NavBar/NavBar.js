@@ -3,8 +3,11 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
+import BurgerBtn from "../BurgerBtn/BurgerBtn"
+
 import "./NavBar.css";
 import { IconContext } from "react-icons";
+
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -14,10 +17,12 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <div className="navbar">
-        <span className="menu-icon material-icons" onClick={showSidebar}>
-        menu
-        </span>
+        <div className="navbar"  onClick={showSidebar}>
+
+        <BurgerBtn />
+       
+        
+
           {/* <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link> */}

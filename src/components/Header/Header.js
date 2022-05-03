@@ -1,7 +1,6 @@
 import React from "react";
 import Bell from "../Bell/Bell";
 import BurgerBtn from "../BurgerBtn/BurgerBtn";
-import ContentBottom from "../ControlBottom/ControlBottom";
 import Logo from "../Logo/Logo";
 import Time from "../Time/Time";
 import "./Header.css";
@@ -12,10 +11,12 @@ import { BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Reports from "../pages/Reports";
 import Products from "../pages/Products";
+import Clock from "../Time/Time";
 
 function Header() {
   return (
     <div className="Header">
+      {/* <BurgerBtn /> */}
       {/* <Logo /> */}
       <Router>
         <Navbar />
@@ -25,6 +26,7 @@ function Header() {
       </Router>
       {/* <Bell /> */}
       <Time />
+    
     </div>
   );
 }

@@ -4,6 +4,8 @@
     border-radius: 50px;
     background: none;
     box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+
+    animation: move 10s infinite ease-in-out;
   }
   
   .gear__icon {
@@ -11,8 +13,8 @@
     font-size: 36px;
     border-radius: 50px;
     background: none;
-    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
-    animation: move 12s infinite ease-in-out;
+  
+    animation: move 10s infinite ease-in-out;
   }
 
 
@@ -20,6 +22,7 @@
 @keyframes move {
   20%, 100% {
     transform: rotate(360deg);
+    box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
     /* color:  #18a0fb; */
   }
   0% {

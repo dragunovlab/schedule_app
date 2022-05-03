@@ -1,0 +1,11 @@
+th {
+    /* border-radius: 10px 10px 0 0; */
+    font-family: "Oswald", sans-serif;
+    font-size: 21px;
+    /* font-style: italic; */
+    text-transform: uppercase;
+    height: 40px;
+    font-weight: 500;
+    background: #8b8fa5;
+    color: #fff;
+  }

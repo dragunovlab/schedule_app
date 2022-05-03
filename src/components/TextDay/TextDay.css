@@ -22,6 +22,15 @@ li {
   font-size: 32px;
   line-height: 53px;
   background: none;
+  text-transform: uppercase;
   /* box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff; */
   /* border-top: 8px solid #8b8fa5; */
+}
+
+
+.box-shadow {
+  border-top: 8px solid #8b8fa5;
+  background: #eef0f4;
+  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+  transition: 0.5s;
 }

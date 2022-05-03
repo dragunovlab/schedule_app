@@ -24,11 +24,10 @@
 
 .slideshow-slider {
   display: flex;
-  transition: ease 1000ms;
+  transition: 1s ease;
+  transition-timing-function: cubic-bezier( 0, 0, 1, 1 );
   background: none;
 }
-
-
 
 .style-box {
   width: 70px;
@@ -46,3 +45,4 @@ background: none;
 box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
 animation: move 60ss infinite ease-in-out;
 }
+

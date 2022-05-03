@@ -8,7 +8,7 @@ import TextDay from "../TextDay/TextDay";
 import "./Content.css";
 
 const numbersOfClasses = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]; //Arr number
-const delay = 12000; //const
+const delay = 10000; //const
 
 function Content(props) {
   const [index, setIndex] = useState(0); //set State

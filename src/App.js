@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Content from "./components/Content/Content";
 import Ball from "./components/Ball/Ball";
 import Menu from "./components/Menu/Menu";
+import Time from "./components/Time/Time";
 
 function App({ loadItemsActions }) {
   loadItemsActions();
