@@ -6,7 +6,7 @@ import TitleHead from "../TitleHead/TitleHead";
 import "./DayBlock.css";
 
 const DayBlock = (props) => {
-  console.log(props, "123");
+  // console.log(props, "123");
 
   let element1 = document.createElement("input");
   let element2 = document.createElement("input");
