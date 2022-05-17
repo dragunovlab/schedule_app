@@ -9,11 +9,21 @@ function Block(props) {
     <>
       <div className="Block">
         <NamesClasses numberClass={props.numberOfClass} />
+        <div className="wrapper1">
         <DayBlock />
+        </div>
+        <div className="wrapper2">
         <DayBlock />
+        </div>
+        <div className="wrapper3">
         <DayBlock />
+        </div>
+        <div className="wrapper4">
         <DayBlock />
+        </div>
+        <div className="wrapper5">
         <DayBlock />
+        </div>
       </div>
     </>
   );

@@ -60,6 +60,7 @@ const times = [{subject: "Матем", time: "08:00:00"}]
 
 let date = new Date(); // Получаем текущие дату и время
 var h = date.getHours(); // Получаем текущий час
+var day = date.getDay(); // Получаем текущий номер дня
 
 
 
@@ -67,6 +68,7 @@ var h = date.getHours(); // Получаем текущий час
 let currentTime = date.valueOf(); //+3h
 
 setTimeout(Active, 1000);
+
 function Active() {
   for (let i = 0; i < times.length; i++) {
     
@@ -87,27 +89,62 @@ function Active() {
     //   input.style.backgroundColor = "red";
     //   input.style.color = "#fff";
     // }
-     
-    if(h >= 0 && h <= 1) {
-    let elements = document.querySelectorAll('.i_1')
-    elements.forEach(element => {
-      element.style.background = "#18a0fb"
-      element.style.color = "#fff" 
-    });
+    
+    if(h >= 16 && h <= 17) {
+      let elements = document.querySelectorAll('.i_5')
+      elements.forEach(element => {
+        element.style.color = "#18a0fb" 
+        // element.style.borderTop = "2px solid #fff"
+        // element.style.borderBottom = "2px solid #fff"
+      });
+  
+    }
+  
+    if((day === 1) && (h >= 22 && h <= 23)) {
+      
+      let wrapper1 = document.querySelector('.wrapper1')
+      let wrapper2 = document.querySelector('.wrapper2')
+      let wrapper3 = document.querySelector('.wrapper3')
+      let wrapper4 = document.querySelector('.wrapper4')
+      let wrapper5 = document.querySelector('.wrapper5')
+      
+
+      wrapper2.classList.add('.black')
+
+
+      let elements = document.querySelectorAll('.i_5')
+
+          elements.forEach(element => {
+            element.classList.add("glass") 
+            element.classList.remove("i") 
+          });
+  
+        }
+    
+    }
+  }
+
+
   //   for(let i = 0; i < elements.length; i++){
   //     elements.style.border = "4px solid blue"  
   // }
-    } // Если сейчас ночь, то меняем файл стилей
-  }
-}
+     // Если сейчас ночь, то меняем файл стилей
+  
+
 
 let timerId2 = setTimeout(function tick2() {
  console.log(Active()) 
-  timerId2 = setTimeout(tick2, 2000); // (*)
+  timerId2 = setTimeout(tick2, 8000); // (*)
 }, 2000);
+
+
 
 // let date = new Date(); // Получаем текущие дату и время
 // let h = date.getHours(); // Получаем текущий час
 // if (h > 16 || h < 17) document.querySelector(".Logo").style.background = 'blue';
 
 //https://stackoverflow.com/questions/32340051/change-classes-to-an-element-with-react
+
+
+
+
